@@ -30,11 +30,9 @@ void loop() {
     startPumpingWater();
     delay(PUMPING_TIME);
     stopPumpingWater();
-    delay(AWAIT_TIME);
-  } else {
-    // Should not measure again for a while
-    delay(AWAIT_TIME);
   }
+  // Should not measure again for a while
+  delay(AWAIT_TIME);
 }
 
 void startPumpingWater() {
